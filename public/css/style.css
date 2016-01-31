@@ -244,6 +244,10 @@ ul, ol {
   width: 100%;
   text-align: center; }
 
+@media (max-width: 600px) {
+  .nav-text {
+    font-size: 20px; } }
+
 li {
   display: inline;
   font-family: "Roboto", sans-serif;
@@ -297,9 +301,9 @@ li {
   background-size: cover;
   margin: 0 auto; }
 
-@media (max-width: 500px) {
-  .about, .phone, .email, .close-popup {
-    font-size: 1.5em;
+@media (max-width: 600px) {
+  .about, .phone, .email, .close-popup, .menu-toggle menu-toggle--close {
+    font-size: 1.6em;
     font-family: "Roboto", sans-serif; }
   .phone {
     margin-right: 33px; } }

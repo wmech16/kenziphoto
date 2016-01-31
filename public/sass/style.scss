@@ -31,6 +31,12 @@ ul, ol {
 
 }
 
+@media (max-width: 600px) {
+    .nav-text {
+        font-size: 20px;
+    }
+}
+
 li {
 	display: inline;
 	font-family: $roboto;
@@ -103,11 +109,12 @@ li {
     margin: 0 auto;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
-	.about, .phone, .email, .close-popup {
-		font-size: 1.5em;
+	.about, .phone, .email, .close-popup, .menu-toggle menu-toggle--close {
+		font-size: 1.6em;
 		font-family: $roboto;
+       
 	}
 	.phone {
 		margin-right: 33px;
