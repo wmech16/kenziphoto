@@ -8,6 +8,90 @@ $background: #f3f3f3;
 	margin: 0;
 }
 
+@charset "utf-8";
+    /* CSS Document */
+    /* Smartphones (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+     html
+     {
+      font-size: 75%;
+     }    
+    }
+    /* Smartphones (landscape) ----------- */
+    @media only screen
+    and (min-width : 321px) {
+     html
+     {
+      font-size: 120%;
+     }  
+    }
+    /* Smartphones (portrait) ----------- */
+    @media only screen
+    and (max-width : 320px) {
+     html
+     {
+      font-size: 120%;
+     }  
+    }
+    /* iPads (portrait and landscape) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px) {
+     html
+     {
+      font-size: 120%;
+     }    
+    }
+    /* iPads (landscape) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+     html
+     {
+      font-size: 150%;
+     }    
+    }
+    /* iPads (portrait) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+
+     html
+     {
+      font-size: 120%;
+     }  
+    }
+    /* Desktops and laptops ----------- */
+    @media only screen
+    and (min-width : 1224px) {
+     html
+     {
+      font-size: 156%;
+     }    
+    }
+    /* Large screens ----------- */
+    @media only screen
+    and (min-width : 1824px) {
+     html
+     {
+      font-size: 200%;
+     }    
+    }
+    /* iPhone 4 ----------- */
+    @media
+    only screen and (-webkit-min-device-pixel-ratio : 1.5),
+    only screen and (min-device-pixel-ratio : 1.5) {
+     html
+     {
+      font-size: 190%;
+     }    
+    }
+
+
 a { text-decoration: none; color:#000; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -30,16 +114,6 @@ ul, ol {
 	text-align: center;
 
 }
-
-.nav-text, .sep {
-    font-size: 50px;
-}
-
-// @media (max-width: 850px) {
-//     .nav-text {
-//         font-size: 20px;
-//     }
-// }
 
 li {
 	display: inline;
@@ -78,15 +152,22 @@ li {
 
 }
 
+.nav-text {
+    font-size: 16px;
+}
+
 .small_logo_wrap {
 	margin: 10px;
-	border: 3px black solid;
+    display: flex;
+    justify-content: center;
 }
 
 .small_logo_wrap img {
-	width: 300px;
-	height: auto;
+	width: auto;
+	height: 100px;
 	padding: 7px;
+	border: 3px black solid;
+    
 
 }
 
@@ -96,12 +177,6 @@ li {
 
 }
 
-@media (max-width: 900px) {
-	.container {
-		max-width: 800px;
-		margin: 50px 75px;
-	}
-}
 
 
 
@@ -113,17 +188,17 @@ li {
     margin: 0 auto;
 }
 
-@media (max-width: 1000px) {
+// @media (max-width: 1000px) {
 
-	.about, .phone, .email, .close-popup, .menu-toggle menu-toggle--close {
-		font-size: 1.6em;
-		font-family: $roboto;
+// 	.about, .phone, .email, .close-popup, .menu-toggle menu-toggle--close {
+// 		font-size: 1.6em;
+// 		font-family: $roboto;
        
-	}
-	.phone {
-		margin-right: 33px;
-	}
-}
+// 	}
+// 	.phone {
+// 		margin-right: 33px;
+// 	}
+// }
 
 .about-contain{
     width: 300px;
