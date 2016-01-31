@@ -256,7 +256,6 @@ li {
   font-weight: bold; }
 
 .social {
-  opacity: .7;
   padding-left: 10px;
   padding-top: 25px; }
 
@@ -311,8 +310,7 @@ li {
   box-shadow: 0px 2px 6px black;
   border-radius: 3px;
   background: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px; }
+  font-family: "Roboto", sans-serif; }
 
 .popup-close {
   width: 30px;
@@ -331,6 +329,9 @@ li {
   line-height: 100%;
   color: #fff; }
 
+.close-popup {
+  font-size: 1.5em; }
+
 .popup-close:hover {
   transform: translate(50%, -50%) rotate(180deg);
   background: black;
@@ -340,28 +341,28 @@ li {
   display: flex; }
 
 .pic_contain {
-  width: 75px;
-  height: 75px;
+  width: 300px;
+  height: 300px;
   background: url(/img/kenzi.jpg);
-  background-size: cover; }
+  background-size: cover;
+  margin: 0 auto; }
 
 @media (max-width: 500px) {
-  .pic_contain {
-    display: none; }
   .about, .phone, .email, .close-popup {
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif; }
   .phone {
     margin-right: 33px; } }
 
 .about-contain {
-  background: #f3f3f3;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  width: 300px;
+  background: lightgrey;
+  margin: 0 auto;
+  border-radius: 3px;
+  text-align: center; }
 
 .about {
-  padding-left: 10px; }
+  font-family: "Roboto", sans-serif; }
 
 .contact {
   margin-top: 30px;
@@ -369,10 +370,11 @@ li {
   margin-bottom: 15px; }
 
 .contact-contain {
-  text-align: center; }
+  text-align: center;
+  font-family: "Roboto", sans-serif; }
 
 .phone {
-  padding-right: 67px;
+  padding-right: 76px;
   padding-top: 10px; }
 
 .email-add {
@@ -388,3 +390,41 @@ footer {
 .me {
   text-decoration: underline;
   padding-bottom: 10px; }
+
+.full-menu {
+  visibility: hidden;
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.92);
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+
+.full-menu--open {
+  visibility: visible;
+  opacity: 2;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1); }
+
+.full-menu--middle {
+  display: table-cell;
+  vertical-align: middle; }
+
+button {
+  border: none;
+  font-size: 2.2em;
+  background: transparent;
+  cursor: pointer; }
+
+.content-contain {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }

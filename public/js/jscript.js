@@ -13,3 +13,7 @@ $('[data-popup-close]').on('click', function(e) {
 	e.preventDefault();
 	})
 });
+
+$('.menu-toggle').on('click', function () {
+    $('.full-menu').toggleClass('full-menu--open');
+})

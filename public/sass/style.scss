@@ -45,7 +45,6 @@ li {
 }
 
 .social {
-	opacity: .7;
 	padding-left: 10px;
 	padding-top: 25px;
 
@@ -153,19 +152,18 @@ li {
 }
 
 .pic_contain {
-	width: 75px;
-	height: 75px;
+	width: 300px;
+	height: 300px;
 	background: url(/img/kenzi.jpg);
 	background-size: cover;
+    margin: 0 auto;
 }
 
 @media (max-width: 500px) {
-	.pic_contain {
-		display: none;
-	}
+
 	.about, .phone, .email, .close-popup {
 		font-size: 1.5em;
-		font-family: $Roboto;
+		font-family: $roboto;
 	}
 	.phone {
 		margin-right: 33px;
@@ -173,34 +171,41 @@ li {
 }
 
 .about-contain{
-	background: $background;
-	border-radius: 5px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    width: 300px;
+    background: lightgrey;
+    margin: 0 auto;
+    border-radius: 3px;
+    text-align: center;
+    
+    
 }
 
 .about {
-	padding-left: 10px;
+    font-family: $roboto;
 }
 
 .contact {
 	margin-top: 30px;
 	text-align: center;
 	margin-bottom: 15px;
+    
 }
 
 .contact-contain {
 	text-align: center;
+    font-family: $roboto;
+    
 }
 
 .phone {
-	padding-right: 67px;
+	padding-right: 76px;
 	padding-top: 10px;
+    
 }
 
 .email-add {
 	text-decoration: underline;
+    
 }
 
 
@@ -216,3 +221,50 @@ footer {
 	text-decoration: underline;
 	padding-bottom: 10px;
 }
+
+
+.full-menu {
+    visibility: hidden;
+    display: table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.92);
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.full-menu--open {
+    visibility: visible;
+    opacity: 2;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.full-menu--middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+button {
+    border: none;
+    font-size: 2.2em;
+    background: transparent;
+    cursor: pointer;
+    
+}
+
+.content-contain {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
